@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app">
+
+        <!--sidebar-->
+       <aside class="sidebar">
+
+    <div class="logo">
+        <i class="fa-solid fa-layer-group"></i>
+        <span>TaskFlow</span>
+    </div>
+
+    <div class="menu-title">MENU</div>
+
+    <a href="index.html" class="nav-item">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+    </a>
+
+    <a href="projects.html" class="nav-item active">
+        <i class="fa-solid fa-folder"></i>
+        <span>Projects</span>
+    </a>
+
+    <a href="tasks.html" class="nav-item">
+        <i class="fa-solid fa-list-check"></i>
+        <span>Tasks</span>
+    </a>
+
+    <a href="calendar.html" class="nav-item">
+        <i class="fa-solid fa-calendar"></i>
+        <span>Calendar</span>
+    </a>
+
+    <a href="team.html" class="nav-item">
+    <i class="fa-solid fa-users"></i>
+    <span>Team</span>
+   </a>
+
+    <a href="analytics.html" class="nav-item">
+        <i class="fa-solid fa-chart-simple"></i>
+        <span>Analytics</span>
+    </a>
+
+    <div class="profile">
+
+        <div class="profile-avatar">
+            P
+        </div>
+
+        <div class="profile-info">
+            <h4>Palak</h4>
+            <p>Student Developer</p>
+        </div>
+
+    </div>
+
+</aside>
+
+        <!--Main Content-->
+        <main class="main">
+            <div class="page-header">
+                <div>
+                    <h1>Projects</h1>
+                    <p>Manage and track your projects</p>
+                </div>
+            </div>
+
+            <!--Search and filter-->
+            <div class="project-controls">
+                <div class="project-filters">
+                <div class="project-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search projects...">
+                </div>
+                <select class="project-filter">
+                    <option value="All Projects">All Projects</option>
+                    <option value="in-progress">In progress</option>
+                    <option value="completed">Completed</option>
+                    <option value="Planning">Planning</option>
+                </select>
+            </div>
+            <button class="add-project-btn">
+                + Add Project
+            </button>
+            </div>
+            <!--Project list-->
+            <section class="project-list">
+                <!--project 1-->
+                <div class="project-item">
+                    <div class="project-item-top">
+                        <div>
+                            <h3>Netflix Clone</h3>
+                            <p>Web development project</p>
+                        </div>
+                        <span class="status in-progress">Make responsive</span>
+                    </div>
+                    <div class="project-progress-info">
+                        <span>Progress</span>
+                        <strong>85%</strong>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width:85%"></div>
+                    </div>
+                    <div class="project-item-bottom">
+                        <div>
+                            <span>Due:17 August</span>
+                            <span>tasks:8</span>
+                            <span>Team:3</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 2 -->
+
+    <div class="project-item">
+
+        <div class="project-item-top">
+
+            <div>
+                <h3>Portfolio Website</h3>
+                <p>Personal portfolio project</p>
+            </div>
+
+            <span class="status in-progress">
+                In Progress
+            </span>
+
+        </div>
+
+
+        <div class="project-progress-info">
+            <span>Progress</span>
+            <strong>91%</strong>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress" style="width:91%;"></div>
+        </div>
+
+
+        <div class="project-item-bottom">
+
+            <div>
+                <span> Due: 17 august</span>
+                <span> Tasks: 5</span>
+                <span> Team: 2</span>
+            </div>
+
+            <div class="project-actions">
+                <button class="edit-btn">
+                    Edit
+                </button>
+
+                <button class="delete-btn">
+                    Delete
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PROJECT 3 -->
+
+    <div class="project-item">
+
+        <div class="project-item-top">
+
+            <div>
+                <h3>Rock Paper Scissors Game</h3>
+                <p>Simple JavaScript game</p>
+            </div>
+
+            <span class="status completed-project">
+                Completed
+            </span>
+
+        </div>
+
+
+        <div class="project-progress-info">
+            <span>Progress</span>
+            <strong>100%</strong>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress" style="width:100%;"></div>
+        </div>
+
+
+        <div class="project-item-bottom">
+
+            <div>
+                <span> Completed</span>
+                <span> Tasks: 4</span>
+                <span> Team: 1</span>
+            </div>
+
+            <div class="project-actions">
+                <button class="edit-btn">
+                    Edit
+                </button>
+
+                <button class="delete-btn">
+                    Delete
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+    </section>
+        </main>
+    </div>
+</body>
+</html>

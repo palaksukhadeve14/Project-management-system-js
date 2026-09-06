@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="app">
+        <!--sidebar-->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class=""></i>
+                <span>ProManage</span>
+            </div>
+            <nav>
+                <p class="menu-title">MENU</p>
+
+                <a href="#" class="nav-item active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="projects.html" class="nav-item">
+                    <i class="fa-solid fa-folder"></i>
+                    <span>Projects</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-list-check"></i>
+                    <span>Tasks</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Team</span>
+                </a>
+
+                <p class="menu-title">WORKSPACE</p>
+
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-calendar"></i>
+                    <span>Calender</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Analytics</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                </a>
+            </nav>
+
+            <!--Profile-->
+            <div class="profile">
+                <div class="profile-avatar">P</div>
+                <div class="profile-info">
+                    <h4>Palak Sukhadeve</h4>
+                    <p>Student Developer</p>
+                </div>
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+        </aside>
+
+        <!--Main Content-->
+        <main class="main">
+            <!--TOPBAR-->
+            <header class="topbar">
+                <div>
+                    <h1>Good Morning, Palak</h1>
+                    <p>Here's what's happening with your projects today.</p>
+                </div>
+                <div class="topbar-actions">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <button class="icon-btn">
+                    <i class="fa-regular fa-bell"></i>
+                </button>
+                <div class="user-avatar">P</div>
+                </div>
+            </header>
+
+            <section class="stats">
+                <div class="stats-card">
+                    <div class="stats-icon">
+                        <i class="fa-solid fa-folder"></i>
+                    </div>
+                    <div>
+                        <p>Total Projects</p>
+                        <h2>12</h2>
+                    </div>
+                </div>
+
+                    <div class="stats-card">
+                    <div class="stats-icon">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <div>
+                        <p>Active Projects</p>
+                        <h2>5</h2>
+                    </div>
+                    </div>
+
+                    <div class="stats-card">
+                    <div class="stats-icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div>
+                        <p>Completed tasks</p>
+                        <h2>13</h2>
+                    </div>
+                    </div>
+
+                    <div class="stats-card">
+                    <div class="stats-icon">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+                    <div>
+                        <p>Overdue tasks</p>
+                        <h2>7</h2>
+                    </div>
+                    </div>
+            </section>
+
+             <!-- DASHBOARD GRID -->
+            <section class="dashboard-grid">
+
+                <!-- PROJECT PROGRESS -->
+                <div class="card project-progress">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>Project Progress</h3>
+                            <p>Current progress of your projects</p>
+                        </div>
+
+                        <button class="view-btn">
+                            View all
+                        </button>
+
+                    </div>
+
+
+                    <div class="project">
+
+                        <div class="project-info">
+                            <span>Website Redesign</span>
+                            <strong>82%</strong>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 82%"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="project">
+
+                        <div class="project-info">
+                            <span>Netflix Clone</span>
+                            <strong>85%</strong>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="project">
+
+                        <div class="project-info">
+                            <span>Portfolio</span>
+                            <strong>91%</strong>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 91%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Task Overview-->
+                <div class="card task-overview">
+                    <div class="card-header">
+                        <div>
+                           <h3>Task Overview</h3>
+                           <p>Your task distribution</p>
+                        </div>
+                    </div>
+
+                <div class="task-stat">
+                    <span>
+                        <i class="dot to-do"></i>
+                        <span>To do</span>
+                    </span>
+                    <strong>12</strong>
+                </div>
+
+                <div class="task-stat">
+                    <span>
+                        <i class="dot progress-dot"></i>
+                        <span>In Progress</span>
+                    </span>
+                    <strong>18</strong>
+                </div>
+
+                <div class="task-stat">
+                    <span>
+                        <i class="dot completed"></i>
+                        <span>Completed</span>
+                    </span>
+                    <strong>15</strong>
+                </div>
+
+                <div class="task-stat">
+                    <span>
+                        <i class="dot Overdue"></i>
+                        <span>Overdue</span>
+                    </span>
+                    <strong>7</strong>
+                </div>
+            </div>
+            </section>
+
+            <section class="card tasks-card">
+                <div class="card header">
+                    <div>
+                        <h3>Recent tasks</h3>
+                        <p>Keep track of your latest work</p>
+                    </div>
+
+                    <button class="add-task">
+                        <i class="fa-solid fa-plus">Add Task</i>
+                    </button>
+                </div>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>task</th>
+                                <th>Project</th>
+                                <th>Due Date</th>
+                                <th>Priority</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Build Login page</td>
+                                <td>Netflix Clone</td>
+                                <td>18 June</td>
+                                <td>
+                                    <span class="priority medium">Medium</span>
+                                </td>
+                                <td>
+                                    <span class="status progress-status">In Progress</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Create API</td>
+                                <td>My-Portfolio</td>
+                                <td>17 August</td>
+                                <td>
+                                    <span class="priority high">High</span>
+                                </td>
+                                <td>
+                                    <span class="status todo-status">
+                                        To do
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Fix Navbar</td>
+                                <td>website</td>
+                                <td>5 sep</td>
+                                <td>
+                                    <span class="priority high">High</span>
+                                </td>
+                                <td>
+                                    <span class="status completed-status">Completed</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
