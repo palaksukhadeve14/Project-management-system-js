@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="app">
+         <!--sidebar-->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class=""></i>
+                <span>ProManage</span>
+            </div>
+            <nav>
+                <p class="menu-title">MENU</p>
+
+                <a href="#" class="nav-item active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="projects.html" class="nav-item">
+                    <i class="fa-solid fa-folder"></i>
+                    <span>Projects</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Team</span>
+                </a>
+
+                <p class="menu-title">WORKSPACE</p>
+
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-calendar"></i>
+                    <span>Calender</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Analytics</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                </a>
+            </nav>
+
+            <!--Profile-->
+            <div class="profile">
+                <div class="profile-avatar">P</div>
+                <div class="profile-info">
+                    <h4>Palak Sukhadeve</h4>
+                    <p>Student Developer</p>
+                </div>
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+        </aside>
+        <!--Main-->
+        <main class="main">
+            <!--topbar-->
+            <div class="topbar">
+                <div>
+                    <h1>Team</h1>
+                    <p>Manage your team members and their roles</p>
+                </div>
+                <div class="topbar-actions">
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                    <button class="icon-btn">
+                        <i class="fa-regular fa-bell"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- team header-->
+             <div class="team-header">
+                <div>
+                    <h2>Team Members</h2>
+                    <p>People working on your projects</p>
+                </div>
+                <button class="add=project-btn" id="addMemberBtn">
+                    <i class="fa solid fa-plus">Add Member</i>
+                </button>
+             </div>
+             <!--Team stats-->
+             <div class="stats">
+                <div class="stats-card">
+                    <div>
+                        <p>Total Members</p>
+                        <h2>8</h2>
+                    </div>
+                    <div class="stats-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
+                <div class="stats-card">
+                    <div>
+                        <p>Developers</p>
+                        <h2>4</h2>
+                    </div>
+    
+                <div class="stats-icon">
+                    <i class="fa solid fa-code"></i>
+                </div>
+             </div>
+                <div class="stats-card">
+                    <div>
+                        <p>Designers</p>
+                        <h2>2</h2>
+                    </div>
+                <div class="stats-icon">
+                    <i class="fa solid fa-pen-ruler"></i>
+                </div>
+             </div>
+                <div class="stats-card">
+                    <div>
+                        <p>Active mebers</p>
+                        <h2>7</h2>
+                    </div>
+                <div class="stats-icon">
+                    <i class="fa solid fa-circle-check"></i>
+                </div>
+             </div>
+             </div>
+             <!--search/filter-->
+             <div class="team-controls">
+                <div class="project-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="teamSearch" pleaceholder="Search team Member">
+                </div>
+                <select class="project-filter" id="role=filter">
+                    <option value="all">All roles</option>
+                    <option value="manager">Manager</option>
+                    <option value="developer">Developer</option>
+                    <option value="designer">Designer</option>
+                    <option value="tester">Tester</option>
+                </select>
+             </div>
+        </main>
+     </div>
+</body>
+</html>
