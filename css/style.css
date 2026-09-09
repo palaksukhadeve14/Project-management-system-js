@@ -480,3 +480,99 @@ td{
         gap:15px;
     }
 }
+
+/*team page*/
+.team-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+.team-header h2{
+    font-size:18px;
+}
+.team-member p{
+    font-size:13px;
+    color: #858597;
+    margin-top:5px;
+}
+.team-controls{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:20px;
+}
+.team-members{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:18px;
+}
+.member-card{
+    background:white;
+    border:1px solid #ececf2;
+    border-radius: 12px;
+    padding:20px;
+    display:flex;
+    align-items: center;
+    gap:15px;
+}
+.member-avatar{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    border: 1px solid #30265c;
+    background-color: #eeeafa;
+    color: #6355d9;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+.member-info{
+    flex:1;
+}
+.member-info h3{
+    font-size: 13px;
+    color:#25253a;
+    margin-bottom: 5px;
+}
+.member-info p{
+    font-size:13px;
+    color:#6355d9;
+    margin-bottom:5px;
+}
+.member-info span{
+    font-size: 13px;
+    color:#858597;
+}
+.add-member-btn{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #6355d9;
+    color:white;
+    border:none;
+    padding:9px 14px;
+    border-radius:5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.add-member-btn:hover{
+    background-color: #5548c7;
+}
+@media(max-width:700px)
+{
+    .team-header{
+        flex-direction:column;
+        align-items: flex-start;
+        gap:15px;
+    }
+    .team-controls{
+        flex-direction:column;
+        align-items: stretch;
+        gap:12px;
+    }
+    .project-search{
+        width:100%;
+    }
+}
